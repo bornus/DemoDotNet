@@ -1,0 +1,17 @@
+C:\Users\fbellier\Documents\PublishRasp\ConsoleRasp
+C:\Users\fbellier\Documents\PublishRasp\ConsoleRasp.dll
+C:\Users\fbellier\Documents\PublishRasp\ConsoleRasp.deps.json
+C:\Users\fbellier\Documents\PublishRasp\ConsoleRasp.runtimeconfig.json
+C:\Users\fbellier\Documents\PublishRasp\ConsoleRasp.pdb
+C:\Users\fbellier\Documents\PublishRasp\Iot.Device.Bindings.dll
+C:\Users\fbellier\Documents\PublishRasp\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\fbellier\Documents\PublishRasp\Microsoft.Win32.SystemEvents.dll
+C:\Users\fbellier\Documents\PublishRasp\Newtonsoft.Json.dll
+C:\Users\fbellier\Documents\PublishRasp\SixLabors.ImageSharp.dll
+C:\Users\fbellier\Documents\PublishRasp\System.CodeDom.dll
+C:\Users\fbellier\Documents\PublishRasp\System.Device.Gpio.dll
+C:\Users\fbellier\Documents\PublishRasp\System.Drawing.Common.dll
+C:\Users\fbellier\Documents\PublishRasp\System.IO.Ports.dll
+C:\Users\fbellier\Documents\PublishRasp\System.Management.dll
+C:\Users\fbellier\Documents\PublishRasp\UnitsNet.dll
+C:\Users\fbellier\Documents\PublishRasp\libSystem.IO.Ports.Native.so

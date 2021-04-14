@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{5474AEA2-69F8-481D-B071-EF45810BB5FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRasp", "ConsoleRasp\ConsoleRasp.csproj", "{CDA0F962-178D-415F-BE08-0CC752032AE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5474AEA2-69F8-481D-B071-EF45810BB5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5474AEA2-69F8-481D-B071-EF45810BB5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5474AEA2-69F8-481D-B071-EF45810BB5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5474AEA2-69F8-481D-B071-EF45810BB5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA0F962-178D-415F-BE08-0CC752032AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA0F962-178D-415F-BE08-0CC752032AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA0F962-178D-415F-BE08-0CC752032AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA0F962-178D-415F-BE08-0CC752032AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9211E5A2-1653-4E7E-B6B5-7A77B148FCC8}
+	EndGlobalSection
+EndGlobal
