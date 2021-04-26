@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApplicationDemo
+namespace WebApplicationDemo.Dto
 {
     public class WeatherForecast
     {
