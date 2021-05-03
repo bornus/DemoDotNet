@@ -3,29 +3,45 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
+using Microsoft.Extensions.Logging;
+using NLog;
+using NLog.Extensions.Logging;
 
 namespace ConsoleRasp
 {
     class Program
     {
         private static ServiceCollection Services { get; set; }
+        private static IServiceProvider Provider { get; set; }
+        private static Logger logger { get; set; }
         private const int LED_PIN = 18;
         private const int BTN_PIN = 19;
 
         static void Main(string[] args)
         {
+            Logger logger = LogManager.LoadConfiguration("nlog.config").GetCurrentClassLogger();
+            logger.Info("Initialisation du programme.");
+            logger.Info("Creating service collection");
             Services = new ServiceCollection();
             ConfigureServices(Services);
 
-            IServiceProvider serviceProvider = Services.BuildServiceProvider();
+            logger.Info("Building service provider");
+            Provider = Services.BuildServiceProvider();
 
             try
             {
-                serviceProvider.GetService<App>().Run();
+                logger.Info("Starting service");
+                Provider.GetService<App>().Run();
+                logger.Info("Ending service");
             }
             catch (Exception ex)
             {
+                logger.Fatal(ex, "Error running service");
                 throw;
+            }
+            finally
+            {
+                LogManager.Shutdown();
             }
         }
 
@@ -42,6 +58,19 @@ namespace ConsoleRasp
 
             // Add app
             services.AddTransient<App>();
+        }
+
+        /// <summary>
+        /// Configure le Logger.
+        /// </summary>
+        protected static void ConfigureLogger()
+        {
+            ILoggerFactory loggerFactory = Provider.GetRequiredService<ILoggerFactory>();
+
+            // Configure NLog
+            loggerFactory.AddNLog(new NLogProviderOptions { CaptureMessageTemplates = true, CaptureMessageProperties = true });
+            LogManager.LoadConfiguration("nlog.config");
+
         }
     }
 }

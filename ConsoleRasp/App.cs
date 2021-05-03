@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace ConsoleRasp
 {
@@ -21,16 +22,18 @@ namespace ConsoleRasp
         };
 
         private readonly AppConfiguration config;
+        private readonly ILogger<App> logger;
 
-        public App(IOptions<AppConfiguration> config)
+        public App(IOptions<AppConfiguration> config, ILogger<App> logger)
         {
             this.config = config.Value;
+            this.logger = logger;
         }
 
         public void Run()
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Blinking LED. Press Ctrl+C to end.");
+            logger.LogDebug("Hello World!");
+            logger.LogDebug("Blinking LED. Press Ctrl+C to end.");
             CancellationTokenSource canTok = new CancellationTokenSource();
             var blinkTask = Task.Run(() => BlinkLed(), canTok.Token);
             var readButtonTask = Task.Run(() => ReadBtn());
@@ -47,6 +50,7 @@ namespace ConsoleRasp
             controller.OpenPin(config.LedPin, PinMode.Output);
             while (true)
             {
+                logger.LogDebug($"Led = {!LedOn}");
                 controller.Write(config.LedPin, ((LedOn) ? PinValue.High : PinValue.Low));
                 Thread.Sleep(500);
                 LedOn = !LedOn;
@@ -62,6 +66,7 @@ namespace ConsoleRasp
             while (noHigh || !callSuccess)
             {
                 PinValue btnVal = controller.Read(config.BtnPin);
+                logger.LogDebug($"Btn = {btnVal}");
                 noHigh = btnVal == PinValue.Low;
                 if (!noHigh)
                 {
@@ -88,6 +93,7 @@ namespace ConsoleRasp
 
             string weatherForcastJson = JsonConvert.SerializeObject(wf);
 
+            logger.LogDebug($"Call Api Forcast {client.BaseAddress} with data : {weatherForcastJson}");
             HttpResponseMessage message = client.PostAsync("WeatherForcast", new StringContent(weatherForcastJson, Encoding.UTF8, "application/json")).Result;
 
             return message.IsSuccessStatusCode;
