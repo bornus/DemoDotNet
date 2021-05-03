@@ -76,6 +76,7 @@ namespace WebApplicationDemo.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             };
 
+            _logger.LogDebug($"Récupération de la prévision {data.Id} : {ws}");
             return ws.TemperatureC;
         }
 

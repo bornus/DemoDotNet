@@ -14,8 +14,6 @@ namespace ConsoleRasp
         private static ServiceCollection Services { get; set; }
         private static IServiceProvider Provider { get; set; }
         private static Logger logger { get; set; }
-        private const int LED_PIN = 18;
-        private const int BTN_PIN = 19;
 
         static void Main(string[] args)
         {

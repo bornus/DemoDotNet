@@ -44,3 +44,7 @@ C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\obj\Debug\net5.0\Razor
 C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\bin\Debug\net5.0\nlog.config
+C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\bin\Debug\net5.0\NLog.dll
+C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\flore\source\repos\DemoDotNet\WebApplicationDemo\bin\Debug\net5.0\NLog.Web.AspNetCore.dll

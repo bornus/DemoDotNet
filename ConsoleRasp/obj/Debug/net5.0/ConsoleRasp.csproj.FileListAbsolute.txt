@@ -90,3 +90,7 @@ C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Ex
 C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\nlog.config
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\NLog.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\NLog.Extensions.Logging.dll
