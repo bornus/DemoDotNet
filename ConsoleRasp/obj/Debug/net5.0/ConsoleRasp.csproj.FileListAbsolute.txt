@@ -76,3 +76,17 @@ C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\obj\Debug\net5.0\ConsoleRasp.
 C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\obj\Debug\net5.0\ref\ConsoleRasp.dll
 C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\obj\Debug\net5.0\ConsoleRasp.pdb
 C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\obj\Debug\net5.0\ConsoleRasp.genruntimeconfig.cache
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\appsettings.json
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\flore\source\repos\DemoDotNet\ConsoleRasp\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll

@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplicationDemo.Configuration;
 using WebApplicationDemo.Hubs;
 
 namespace WebApplicationDemo
@@ -34,6 +35,8 @@ namespace WebApplicationDemo
             });
             services.AddRazorPages();
             services.AddSignalR();
+
+            services.Configure<AppConfiguration>(Configuration.GetSection("AppConfiguration"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

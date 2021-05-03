@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using WebApplicationDemo.Configuration;
 using WebApplicationDemo.Dto;
 using WebApplicationDemo.ViewModel;
 
@@ -20,16 +22,19 @@ namespace WebApplicationDemo.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly AppConfiguration config;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptions<AppConfiguration> config)
         {
             _logger = logger;
+            this.config = config.Value;
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return Enumerable.Range(1, config.NbForcast).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
